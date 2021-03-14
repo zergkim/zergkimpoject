@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,thead{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">폴더명</th>
+                    <th>사이즈</th>
+                    <th>수정날자</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<script>
+    async function main(){
+        let href = location.pathname.split('/')
+        
+        href[1]="main"
+        console.log(href)
+        href = href.join("/")
+        let arr = await (await fetch(href)).json()
+        console.log(arr)
+        arr.forEach(v=>{
+            let a = document.createElement("a")
+            a.textContent=v.main
+            a.href=v.main
+            document.body.appendChild(a)
+            document.body.appendChild(document.createElement("br"))
+        })
+    }
+    main()
+</script>    
+</body>
+
+</html>
