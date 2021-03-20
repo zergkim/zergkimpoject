@@ -1,4 +1,3 @@
-const { urlencoded } = require('express');
 const express = require('express')
 const fs = require('fs/promises');
 
@@ -25,6 +24,6 @@ app.use("/main",async(req,res)=>{
     res.json(narr)
 })
 
-app.listen(3000,()=>{
+app.listen(80,()=>{
     console.log("허접하냐 ㅋ")
 })
