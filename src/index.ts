@@ -1,7 +1,9 @@
-const express = require('express')
-const fs = require('fs/promises');
 
-const path = require('path')
+import express from 'express';
+
+import fs from 'fs/promises';
+import path from 'path'
+
 const app = express();
 app.use(express.json());
 app.use(express.text());
