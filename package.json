@@ -4,8 +4,8 @@
   "description": "wefffffffffffffff",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"tsc -w\" \"nodemon ./dist/index.js\""
+    "test":"concurrently \"tsc -w\" \"nodemon ./dist/index.js\"",
+    "start": "sudo concurrently \"sudo tsc -w\" \"nodemon ./dist/index.js\""
 
   },  
   "repository": {
