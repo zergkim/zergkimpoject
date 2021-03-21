@@ -4,10 +4,9 @@
   "description": "wefffffffffffffff",
   "main": "index.js",
   "scripts": {
-    "test":"concurrently \"tsc -w\" \"nodemon ./dist/index.js\"",
-    "start": "sudo concurrently \"sudo tsc -w\" \"nodemon ./dist/index.js\""
-
-  },  
+    "test": "concurrently \"tsc -w\" \"nodemon ./dist/index.js\"",
+    "start": "sudo concurrently \"sudo tsc -w\" \"sudo nodemon ./dist/index.js\""
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zergkim/zergkimpoject.git"
