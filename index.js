@@ -22,12 +22,12 @@ app.use("/main",async(req,res)=>{
     }
     console.log(paths,narr)
     res.json(narr)
+});
+
+app.get('/', (req, res) => {
+    res.end('send');
 })
 
-app.listen(80,()=>{
+app.listen(3000,()=>{
     console.log("허접하냐 ㅋ")
-})
-"SDsff"
-"WEFw"
-"Sfdsf"
-"wfewf"/5
+});
